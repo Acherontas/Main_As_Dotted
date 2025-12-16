@@ -1,0 +1,41 @@
+#include <iostream>
+#include <iomanip>
+#include "math.h"
+using namespace std;
+
+
+void manual(){
+
+cout<<"The sum of digits of the main number is \n";
+cout<<"the same as the sum of digits a part of"
+
+}
+
+int main(int argc,char** argv)
+{
+    long double ar[10]={9,
+                        99,
+                        999,
+                        9999,
+                        99999,
+                        999999,
+                        9999999,
+                        99999999,
+                        999999999,
+                        9999999999};
+    long double ark;
+    cout<<"enter main number \n" ;
+    ark=stold(argv[1]);
+    long double rst;
+    int preci;
+    cout<<"enter precision\n";
+    preci=stoi(argv[2]);
+    for(int i=0;i<=10-1;i++){
+
+    rst=(long double)ark/(long double)ar[i];
+    cout<<std::setprecision(preci) << ark << " / " << std::setprecision(preci) << ar[i] << " ::== " <<std::setprecision(preci)<< rst <<"\n";
+
+
+    }
+    return 0;
+}

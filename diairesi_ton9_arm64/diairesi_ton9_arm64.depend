@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1765899926 source:/home/acherontas/codeblocks/diairesi_ton9_arm64/main.cpp
+	<iostream>
+	<iomanip>
+	"math.h"
+
